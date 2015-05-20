@@ -28,3 +28,26 @@
 h1.media-heading{
     font-size: 1.5em;
 }
+.panels-row .panel-body{
+    height: 25em;
+    overflow: hidden;
+}
+.panel-body p{
+    text-align: left;
+}
+
+/* CSS REQUIRED */
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+/* DEMO ONLY - REMOVES UNWANTED MARGIN */
+.well .list-group {
+    margin-bottom: 0px;
+    height: 300px;
+    overflow: auto;
+}

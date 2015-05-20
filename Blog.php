@@ -7,14 +7,13 @@
 <?php include "comps/nav.php"; ?>
 <?php include "comps/carusel.php"; ?>
 <div class="container">
-
+Coming Soon
     <?php
-        include "portfolio/all.php";
-        include "portfolio/related.php";
-        echo 'ki';
+       // include "portfolio/all.php";
+       // include "portfolio/related.php";
+       // echo 'ki';
         ?>
 
-    ?>
 </div>
 <?php include "comps/footer.php"; ?>
 </body>

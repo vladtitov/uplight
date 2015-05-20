@@ -14,7 +14,7 @@
 <div class="container">
     <?php
         include "products/Building Directories.php";
-        include "portfolio/related.php";
+        include "comps/related.php";
         ?>
 
 </div>

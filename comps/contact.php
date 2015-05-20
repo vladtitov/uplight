@@ -29,7 +29,7 @@
             <p><i class="fa fa-phone"></i>
                 <abbr title="Phone">P</abbr>: 416 882 7855</p>
             <p><i class="fa fa-envelope-o"></i>
-                <abbr title="Email">E</abbr>: <a href="uplight.ca@gmail.com">uplight.ca@gmail.com</a>
+                <abbr title="Email">E</abbr>: <a href="mailto:uplight.ca@gmail.com">uplight.ca@gmail.com</a>
             </p>
             <p><i class="fa fa-clock-o"></i>
                 <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>

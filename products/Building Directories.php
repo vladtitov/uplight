@@ -4,37 +4,37 @@
     $file ='data/directories/';
     $com ='data/com/';
 
-    $img1 = $img .findFile('Kiosk and Mobile', $directoriesImg);
-    $file1 = $file.findFile('Building', $directories);
+    $img1 = $library->imageDir('Kiosk and Mobile');
+    $file1 = $library->textDir('Building');
 
-    $img2 = $img .findFile('Structure', $directoriesImg);
-    $file2 = $file.findFile('What is', $directories);
+    $img2 = $library->imageDir('Structure');
+    $file2 = $library->textDir('What is');
 
-    $img3 = $img .findFile('Information', $directoriesImg);
-    $file3 = $file.findFile('Information', $directories);
+    $img3 = $library->imageDir('Information');
+    $file3 = $library->textDir('Information');
 
-    $img4 = $img .findFile('Color Picker', $directoriesImg);
-    $file4 = $file.findFile('Brand Colors', $directories);
+    $img4 = $library->imageDir('Color Picker');
+    $file4 = $library->textDir('Brand Colors');
 
-    $file5 = $file.findFile('handoff', $directories);
+    $file5 = $library->textDir('handoff');
 
-    $img6 = $img .findFile('RSS', $directoriesImg);
-    $file6 = $file.findFile('Messaging', $directories);
+    $img6 = $library->imageDir('RSS');
+    $file6 = $library->textDir('Messaging');
 
 
-    $file7 = $file.findFile('CMS', $directories);
+    $file7 = $library->textDir('CMS');
 
-    $file8 = $file.findFile('Edit', $directories);
+    $file8 = $library->textDir('Edit');
 
-    $file9 = $file.findFile('Categories', $directories);
+    $file9 = $library->textDir('Categories');
 
-    $file10 = $file.findFile('Appearance', $directories);
+    $file10 = $library->textDir('Appearance');
 
-    $file11 = $file.findFile('Info Pages', $directories);
+    $file11 = $library->textDir('Info Pages');
 
-    $file12 = $file.findFile('Import Export', $directories);
+    $file12 = $library->textDir('Import Export');
 
-    $file13 = $com.findFile('Techical', $common);
+    $file13 = $library->text('Techical');
 
 ?>
 

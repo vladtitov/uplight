@@ -1,16 +1,16 @@
 <?php
 session_start();
-$_SESSION['ip']=$_SERVER['REMOTE_ADDR'];
-$base=$_SERVER['DOCUMENT_ROOT'];
-$service=$_SERVER['PHP_SELF'];
+//$_SESSION['ip']=$_SERVER['REMOTE_ADDR'];
+//$base=$_SERVER['DOCUMENT_ROOT'];
+//$service=$_SERVER['PHP_SELF'];
 $topic =!empty($_SERVER['QUERY_STRING'])?$_SERVER['QUERY_STRING']:0;
 //$configXML=simplexml_load_file('data/config.xml');
-$comps=array();
-$data=array();
+//$comps=array();
+//$data=array();
 //$images = scandir('data/images');
-$directoriesImg = scandir('data/images/directories');
-$directories = scandir('data/directories');
-$common =scandir('data/com');
+//$directoriesImg = scandir('data/images/directories');
+//$directories = scandir('data/directories');
+//$common = scandir('data/com');
 
 class Library{
     var $images;
@@ -21,7 +21,7 @@ class Library{
     public function getSection($item){
         $text = file_get_contents($item->text);
        return  '<section data-tmpl="'.$item->tmpl.'">
-        <h1>'.$item->topic.'</h1>
+        <h4>'.$item->topic.'</h4>
         <div>'.$text.'</div>
         <img src="'.$item->image.'"/>
         <a href="'.$item->href.'">More</a>
@@ -29,42 +29,51 @@ class Library{
     }
 
     public function renderItem($item){
-    $text = file_get_contents($item->text);
-    return  '<section>
-        <h1>'.$item->topic.'</h1>
-        <div>'.$text.'</div>'.(isset($item->image)?'<img src="'.$item->image.'"/>':'').(isset($item->icon)?'<icon>'.$item->icon.'</icon>':'').'<a href="'.$item->href.'">More</a></section>';
+		$text = file_get_contents($item->text);
+		return  '<section>
+			<h4>'.$item->topic.'</h4>
+			<div>'.$text.'</div>'.(isset($item->image)?'<img src="'.$item->image.'" title="'.$item->topic.'" />':'').(isset($item->icon)?'<icon>'.$item->icon.'</icon>':'').'<a href="'.$item->href.'">More</a></section>';
+    }
+	
+	 public function renderImage($item){
+		return  '<a '.(isset($item->href)?('href="'.$item->href.'"'):'').'  ><img src="'.$item->image.'" alt="'.$item->topic.'" title="'.$item->topic.'"  /></a>';		
     }
 
      public function fromImages($text){
             if(!$this->images)$this->images = scandir('data/images');
             foreach($this->images as $file)  if(strpos($file,$text)!==false)return 'data/images/'.$file;
-            return 0;
+        return 0;
      }
+	 
     public function image($text){
-    return $this->fromImages($text);
+		return $this->fromImages($text);
     }
+	
     public function imageDir($text){
-        if(!$this->imagesDir)$this->imagesDir = scandir('data/images/directories');
-        foreach($this->imagesDir as $file)  if(strpos($file,$text)!==false)return 'data/images/directories/'.$file;
+			if(!$this->imagesDir)$this->imagesDir = scandir('data/images/directories');
+			foreach($this->imagesDir as $file)  if(strpos($file,$text)!==false)return 'data/images/directories/'.$file;
         return 0;
     }
+	
     public function textCom($text){
-        if(!$this->com)$this->com = scandir('data/com');
-        foreach($this->com as $file)  if(strpos($file,$text)!==false)return 'data/com/'.$file;
+			if(!$this->com)$this->com = scandir('data/com');
+			foreach($this->com as $file)  if(strpos($file,$text)!==false)return 'data/com/'.$file;
         return 0;
     }
+	
     public function text($name){
-    return $this->textCom($name);
+		return $this->textCom($name);
     }
+	
     public function textPortfolio($word){
-        if(!$this->portfolio)$this->portfolio = scandir('data/portfolio');
-        foreach($this->portfolio as $file)  if(strpos($file,$word)!==false)return 'data/portfolio/'.$file;
+			if(!$this->portfolio)$this->portfolio = scandir('data/portfolio');
+			foreach($this->portfolio as $file)  if(strpos($file,$word)!==false)return 'data/portfolio/'.$file;
         return 0;
 
     }
     public function textDir($text){
-        if(!$this->dir)$this->dir = scandir('data/directories');
-        foreach($this->dir as $file)  if(strpos($file,$text)!==false)return 'data/directories/'.$file;
+			if(!$this->dir)$this->dir = scandir('data/directories');
+			foreach($this->dir as $file)  if(strpos($file,$text)!==false)return 'data/directories/'.$file;
         return 0;
     }
 
@@ -72,7 +81,7 @@ class Library{
  }
 
 $library = new Library();
-
+/*
 function searchFiles($words,$files){
     $words=explode(' ',$words);
     if(count($words)==1)$words[]='.';
@@ -85,7 +94,7 @@ function findFile($word,$files){
     foreach($files as $file)  if(strpos($file,$word)!==false)return $file;
         return 0;
 }
-
+*/
 
 ?>
 
