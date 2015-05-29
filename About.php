@@ -21,7 +21,7 @@ include "comps/carusel.php";
         ?>
     </div>
     <?php
-        include "comps/customers.php";
+       // include "comps/customers.php";
      ?>
 
 </div>
