@@ -10,7 +10,7 @@ include "comps/carusel.php";
 ?>
 
 <div class="container">
-    <div class="row bs-6-6">
+    <div class="image-text">
         <?php
             $item=new stdClass();
             $item->topic='IT for everyone';

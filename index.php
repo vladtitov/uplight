@@ -20,13 +20,13 @@
                 foreach($items as $item) echo $library->renderItem($item);
             ?>
         </div>
-        <div class="imgs-c3m2s">
+       <!-- <div class="imgs-c3m2s">
             <h2>Portfolio Heading</h2>
             <?php
                 $items = $projects->getAllprojects();
                 foreach($items as $item) echo $library->renderImage($item);
             ?>
-        </div>
+        </div>-->
         <div class="image-text text-first">
             <?php
                 $item=new stdClass();

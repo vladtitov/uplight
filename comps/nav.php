@@ -16,7 +16,7 @@
                 <li>
                     <a href="About.php">About</a>
                 </li>
-                <li>
+               <!-- <li>
                     <a href="Services.php">Services</a>
                 </li>
 
@@ -26,20 +26,14 @@
                         <li>
                             <a href="Products.php?Building Directories">Building Directories</a>
                         </li>
-                       <!-- <li>
-                            <a href="More.php?More-1">More 1</a>
-                        </li>
-                        <li>
-                            <a href="More.php?More-2">More 2</a>
-                        </li>-->
                     </ul>
-                </li>
+                </li>-->
 
                 <li>
                     <a href="Contact.php">Contact</a>
                 </li>
 
-                <li class="dropdown">
+               <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
@@ -72,7 +66,7 @@
                             <a href="Blog.php?Blog-2">Blog 2</a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
 
 
 
