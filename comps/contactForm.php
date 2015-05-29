@@ -1,6 +1,4 @@
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="row" id="Contact-Form">
+<div class="row" id="Contact-Form">
         <div class="col-md-8">
             <h3>Send us a Message</h3>
             <form name="sentMessage" id="contactForm" novalidate>
@@ -31,8 +29,8 @@
                 </div>
                 <div id="success"></div>
                 <!-- For success/fail messages -->
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" onclick="return false;" class="btn btn-primary">Send Message</button>
             </form>
         </div>
-
-    </div>
+</div>
+<script src="js/ContactForm.js"></script>
