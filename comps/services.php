@@ -9,6 +9,7 @@
     <h2>Main Services</h2>
         <?php
             include('comps/allProjects.php');
+			
             $projects = new Projects($library);
             $items = $projects->getServices1();
             foreach($items as $item) echo $library->renderItem($item);
