@@ -73,7 +73,7 @@ module uplignt{
                 return;
             }
             var data:any={};
-            data.title=$('#formtitle').text();
+            data.title=$.trim($('#formtitle').text());
             data.formid=this.id;
             data.url= window.location.href;
             this.view.find('.form-control').each(function(num,el:HTMLInputElement){ data[el.getAttribute('id')] = $(el).val(); })
