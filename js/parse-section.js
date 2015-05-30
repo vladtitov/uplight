@@ -66,7 +66,7 @@
         });
     });
 
-    $('.image-text').each(function(index,item){
+    $('.image-text').addClass('row').each(function(index,item){
         item = $(item);
         var section = item.children('section').remove();
         var h4 = section.children('h4').text();

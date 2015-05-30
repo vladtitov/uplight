@@ -28,6 +28,17 @@
 
            }
 
+            public function getService($name){
+                   $item=new stdClass();
+                   $item->tmpl='item-service1';
+                   $item->topic='Mobile Applications';
+                   $item->text=$this->library->textCom('Mobile Applications');
+                   $item->icon='mobile';
+                   $item->href = 'Products.php?Mobile-Applications#Mobile-Applications';
+            return $item;
+            }
+
+
             public function getServices1(){
                    $items = array();
                    $item=new stdClass();
