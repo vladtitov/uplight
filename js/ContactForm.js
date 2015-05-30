@@ -63,7 +63,7 @@ var uplignt;
                 return;
             }
             var data = {};
-            data.title = $('#formtitle');
+            data.title = $('#formtitle').text();
             data.formid = this.id;
             data.url = window.location.href;
             this.view.find('.form-control').each(function (num, el) {
