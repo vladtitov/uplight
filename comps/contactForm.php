@@ -9,7 +9,19 @@
 </style>
 <div class="row" id="Contact-Form">
         <div class="col-md-8">
-            <h3>Send us a Message</h3>
+            <h3 id="formtitle">
+                <?php
+                $topic ='Send us a Message';
+                $ar= explode('/',$_SERVER['QUERY_STRING']);
+                $title= $ar[0];
+                if(count($title)!=0) $topic = str_replace('-',' ',$title);
+
+
+                echo $topic;
+                ?>
+
+
+            </h3>
             <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group form-group">
                     <div class="controls">
