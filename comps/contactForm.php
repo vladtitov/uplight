@@ -14,13 +14,9 @@
                 $topic ='Send us a Message';
                 $ar= explode('/',$_SERVER['QUERY_STRING']);
                 $title= $ar[0];
-                if(count($title)!=0) $topic = str_replace('-',' ',$title);
-
-
+                if(count($title)>5) $topic = str_replace('-',' ',$title);
                 echo $topic;
                 ?>
-
-
             </h3>
             <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group form-group">

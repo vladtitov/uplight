@@ -6,12 +6,16 @@
 <body id="home">
     <?php include "comps/nav.php"; ?>
     <?php include "comps/carusel.php"; ?>
+
     <div class="container">
+
         <div class="col-lg-12" id="WelcomeToWeb">
             <h1 class="page-header">
                 Welcome to WEB Technology 2015
             </h1>
         </div>
+
+
         <div class="panels-flat">
             <?php
                 include('comps/allProjects.php');
@@ -45,9 +49,27 @@
                 </div>
             </section>-->
         </div>
+
+
+
+
+        <div class="panels-row">
+            <h2>Main Services</h2>
+            <?php
+          //  include('comps/allProjects.php');
+           // $projects = new Projects($library);
+            $items = $projects->getServices1();
+            foreach($items as $item) echo $library->renderItem($item);
+            ?>
+        </div>
+
     </div>
+
     <?php
         include('data/com/Call to Action.html');
+     ?>
+
+    <?php
         include "comps/footer.php";
      ?>
     <script  src="js/parse-section.js"></script>

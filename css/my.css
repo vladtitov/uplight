@@ -29,11 +29,17 @@ h1.media-heading{
     font-size: 1.5em;
 }
 .panels-row .panel-body{
-    height: 25em;
-    overflow: hidden;
+    height: 26em;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .panel-body p{
     text-align: left;
+}
+.panel-body div{
+    padding: 0;
+    margin: 0;
 }
 
 /* CSS REQUIRED */
