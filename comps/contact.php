@@ -35,10 +35,10 @@
                 <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
             <ul class="list-unstyled list-inline list-social-icons">
                 <li>
-                    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/profile/view?id=64587612&trk=hp-identity-photo"><i class="fa fa-linkedin-square fa-2x"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    <a href="https://plus.google.com/u/0/100324809037266579314/about"><i class="fa fa-google-plus-square fa-2x"></i></a>
                 </li>
             </ul>
         </div>
