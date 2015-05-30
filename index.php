@@ -48,6 +48,10 @@
     </div>
     <?php
         include('data/com/Call to Action.html');
+		?>
+    
+      
+		<?php
         include "comps/footer.php";
      ?>
     <script  src="js/parse-section.js"></script>
