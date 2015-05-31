@@ -101,7 +101,8 @@ function findFile($word,$files){
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="Develop web applications and CMS on cloud solution using OWASP best practices security contror. Software as Service SaaS for Mobile Application work on Android, iOS, Windows
+ and Data Integration on user Interface level">
 <meta name="author" content="">
 
 <meta name="google-site-verification" content="bwbiF8sgNJJbW_SCet7eSBrI-HH6e8mO2CnWiSsf-VM" />

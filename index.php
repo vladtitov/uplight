@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-<title>UPLIGHT</title>
+<title>UPLIGHT | Mobile Applications | Kiosk Software | CMS | Web Applications </title>
     <?php include "comps/common.php"; ?>
 </head>
 <body id="home">
