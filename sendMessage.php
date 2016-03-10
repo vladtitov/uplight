@@ -10,8 +10,11 @@ $data->to='uplight.ca@gmail.com';
 $data->subject = 'Website contact ';
 $data->user='forntdesk';
 $data->pass='frontedsk';
-$data->message=file_get_contents('php://input');
-echo json_encode($data);
+$input = json_decode(file_get_contents('php://input'),TRUE);
+$msg ='';
+$foreach($input as $key=>$val)$msg.='<tr><td>'.$key.'</td><td>'.$val.'</td></tr>';
+$data->message=$msg;
+
 $ch = curl_init();
 $url ='http://front-desk.ca/email/send';
 curl_setopt($ch,CURLOPT_URL, $url);
