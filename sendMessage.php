@@ -14,7 +14,7 @@ $input = json_decode(file_get_contents('php://input'));
 $msg ="Message \n\r";
 foreach($input as $key=>$val)$msg.=''.$key.' : '.$val."\n\r";
 $data->message=$msg;
-echo json_encode($data);
+//echo json_encode($data);
 
 $ch = curl_init();
 $url ='http://front-desk.ca/email/send';
