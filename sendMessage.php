@@ -13,7 +13,7 @@ $data->pass='frontedsk';
 $data->message=file_get_contents('php://input');
 echo json_encode($data);
 $ch = curl_init();
-$url ='http://front-desk.ca/utils/email/send';
+$url ='http://front-desk.ca/email/send';
 curl_setopt($ch,CURLOPT_URL, $url);
 curl_setopt($ch,CURLOPT_POST, 1);
 curl_setopt($ch,CURLOPT_POSTFIELDS, json_encode($data));
