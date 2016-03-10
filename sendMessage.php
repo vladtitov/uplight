@@ -8,8 +8,8 @@ else{
 $data= new stdClass();
 $data->to='uplight.ca@gmail.com';
 $data->subject = 'Website contact ';
-$data->user='forntdesk';
-$data->pass='frontedsk';
+$data->user='uplight.ca@gmail.com';
+$data->pass='uplight.ca@gmail.com';
 $input = json_decode(file_get_contents('php://input'));
 $msg ="Message \n\r";
 foreach($input as $key=>$val)$msg.=''.$key.' : '.$val."\n\r";
